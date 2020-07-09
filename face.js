@@ -8,7 +8,7 @@ $(function() {
 
         var subscriptionKey = "037ae424551545e99bd9738e5956344d";
 
-        var uriBase = "https://japaneast.api.cognitive.microsoft.com/face/v1.0/detect";
+        var uriBase = "https://westcentralus.api.cognitive.microsoft.com/face";
 
         var params = {
             "returnFaceId": "true",
