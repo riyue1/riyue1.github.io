@@ -44,7 +44,7 @@ var geometry1 = new THREE.BoxGeometry(1, 1, 1);
 //var material = new THREE.MeshPhongMaterial({ color: 0xffffff });
 //var box = new THREE.Mesh(geometry, material);
 var box = new THREE.Mesh(geometry1, mat);
-box.position.set(0,0,-5);
+box.position.z = -5;
 scene.add(box);
 
 // 平行光源
@@ -58,10 +58,10 @@ directionalLight2.position.set(-10, 1, 1);
 // シーンに追加
 scene.add(directionalLight2);
 
-var directionalLight3 = new THREE.DirectionalLight(0xffffff);
-directionalLight3.position.set(1, -10, 1);
+//var directionalLight3 = new THREE.DirectionalLight(0xffffff);
+//directionalLight3.position.set(1, -10, 1);
 // シーンに追加
-scene.add(directionalLight3);
+//scene.add(directionalLight3);
 
 // 初回実行
 var update = function() {
