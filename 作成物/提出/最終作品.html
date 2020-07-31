@@ -18,6 +18,8 @@
           canvas: document.querySelector('#myCanvas')
         });
         renderer.setSize(width, height);
+        // 光源が関係ないので
+        //renderer.setClearColor(0xff6f6f, 0.3 );
 
         // シーンを作成
         const scene = new THREE.Scene();
@@ -144,7 +146,7 @@
 
         //光源はspriteのみならば不要！
         // 光源（環境光）
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
+        const ambientLight = new THREE.AmbientLight(0x5f5f5f, 1.0);
         scene.add(ambientLight);
 
         tick();
